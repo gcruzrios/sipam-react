@@ -15,194 +15,12 @@ const Nav = () => {
                      <input className="form-control me-sm-2 box-shadow-none" type="search" placeholder="Search..." aria-label="Search"/>
                   </form>
                </li>
-               <li className="nav-message">
-                  <div className="dropdown-custom">
-                     <a href="javascript:;" className="nav-item-toggle icon-active">
-                        <img className="svg" src="img/svg/message.svg" alt="img" />
-                     </a>
-                     <div className="dropdown-parent-wrapper">
-                        <div className="dropdown-wrapper">
-                           <h2 className="dropdown-wrapper__title">Messages <span className="badge-circle badge-success ms-1">2</span></h2>
-                           <ul>
-                              <li className="author-online has-new-message">
-                                 <div className="user-avater">
-                                    <img src="img/team-1.png" alt=""/>
-                                 </div>
-                                 <div className="user-message">
-                                    <p>
-                                       <a href="" className="subject stretched-link text-truncate" style="max-width: 180px;">Web Design</a>
-                                       <span className="time-posted">3 hrs ago</span>
-                                    </p>
-                                    <p>
-                                       <span className="desc text-truncate" style="max-width: 215px;">Lorem
-                                          ipsum
-                                          dolor amet cosec Lorem ipsum</span>
-                                       <span className="msg-count badge-circle badge-success badge-sm">1</span>
-                                    </p>
-                                 </div>
-                              </li>
-                              <li className="author-offline has-new-message">
-                                 <div className="user-avater">
-                                    <img src="img/team-1.png" alt=""/>
-                                 </div>
-                                 <div className="user-message">
-                                    <p>
-                                       <a href="" className="subject stretched-link text-truncate" style="max-width: 180px;">Web Design</a>
-                                       <span className="time-posted">3 hrs ago</span>
-                                    </p>
-                                    <p>
-                                       <span className="desc text-truncate" style="max-width: 215px;">Lorem
-                                          ipsum
-                                          dolor amet cosec Lorem ipsum</span>
-                                       <span className="msg-count badge-circle badge-success badge-sm">1</span>
-                                    </p>
-                                 </div>
-                              </li>
-                              <li className="author-online has-new-message">
-                                 <div className="user-avater">
-                                    <img src="img/team-1.png" alt=""/>
-                                 </div>
-                                 <div className="user-message">
-                                    <p>
-                                       <a href="" className="subject stretched-link text-truncate" style="max-width: 180px;">Web Design</a>
-                                       <span className="time-posted">3 hrs ago</span>
-                                    </p>
-                                    <p>
-                                       <span className="desc text-truncate" style="max-width: 215px;">Lorem
-                                          ipsum
-                                          dolor amet cosec Lorem ipsum</span>
-                                       <span className="msg-count badge-circle badge-success badge-sm">1</span>
-                                    </p>
-                                 </div>
-                              </li>
-                              <li className="author-offline">
-                                 <div className="user-avater">
-                                    <img src="img/team-1.png" alt=""/>
-                                 </div>
-                                 <div className="user-message">
-                                    <p>
-                                       <a href="" className="subject stretched-link text-truncate" style="max-width: 180px;">Web Design</a>
-                                       <span className="time-posted">3 hrs ago</span>
-                                    </p>
-                                    <p>
-                                       <span className="desc text-truncate" style="max-width: 215px;">Lorem
-                                          ipsum
-                                          dolor amet cosec Lorem ipsum</span>
-                                    </p>
-                                 </div>
-                              </li>
-                              <li className="author-offline">
-                                 <div className="user-avater">
-                                    <img src="img/team-1.png" alt=""/>
-                                 </div>
-                                 <div className="user-message">
-                                    <p>
-                                       <a href="" className="subject stretched-link text-truncate" style="max-width: 180px;">Web Design</a>
-                                       <span className="time-posted">3 hrs ago</span>
-                                    </p>
-                                    <p>
-                                       <span className="desc text-truncate" style="max-width: 215px;">Lorem
-                                          ipsum
-                                          dolor amet cosec Lorem ipsum</span>
-                                    </p>
-                                 </div>
-                              </li>
-                           </ul>
-                           <a href="" className="dropdown-wrapper__more">See All Message</a>
-                        </div>
-                     </div>
-                  </div>
-               </li>
-               {/* <!-- ends: nav-message --> */}
-               <li className="nav-notification">
-                  <div className="dropdown-custom">
-                     <a href="javascript:;" className="nav-item-toggle icon-active">
-                        <img className="svg" src="img/svg/alarm.svg" alt="img"/>
-                     </a>
-                     <div className="dropdown-parent-wrapper">
-                        <div className="dropdown-wrapper">
-                           <h2 className="dropdown-wrapper__title">Notifications <span className="badge-circle badge-warning ms-1">4</span></h2>
-                           <ul>
-                              <li className="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
-                                 <div className="nav-notification__type nav-notification__type--primary">
-                                    <img className="svg" src="img/svg/inbox.svg" alt="inbox"/>
-                                 </div>
-                                 <div className="nav-notification__details">
-                                    <p>
-                                       <a href="" className="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
-                                       <span>sent you a message</span>
-                                    </p>
-                                    <p>
-                                       <span className="time-posted">5 hours ago</span>
-                                    </p>
-                                 </div>
-                              </li>
-                              <li className="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
-                                 <div className="nav-notification__type nav-notification__type--secondary">
-                                    <img className="svg" src="img/svg/upload.svg" alt="upload"/>
-                                 </div>
-                                 <div className="nav-notification__details">
-                                    <p>
-                                       <a href="" className="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
-                                       <span>sent you a message</span>
-                                    </p>
-                                    <p>
-                                       <span className="time-posted">5 hours ago</span>
-                                    </p>
-                                 </div>
-                              </li>
-                              <li className="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
-                                 <div className="nav-notification__type nav-notification__type--success">
-                                    <img className="svg" src="img/svg/log-in.svg" alt="log-in"/>
-                                 </div>
-                                 <div className="nav-notification__details">
-                                    <p>
-                                       <a href="" className="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
-                                       <span>sent you a message</span>
-                                    </p>
-                                    <p>
-                                       <span className="time-posted">5 hours ago</span>
-                                    </p>
-                                 </div>
-                              </li>
-                              <li className="nav-notification__single nav-notification__single d-flex flex-wrap">
-                                 <div className="nav-notification__type nav-notification__type--info">
-                                    <img className="svg" src="img/svg/at-sign.svg" alt="at-sign"/>
-                                 </div>
-                                 <div className="nav-notification__details">
-                                    <p>
-                                       <a href="" className="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
-                                       <span>sent you a message</span>
-                                    </p>
-                                    <p>
-                                       <span className="time-posted">5 hours ago</span>
-                                    </p>
-                                 </div>
-                              </li>
-                              <li className="nav-notification__single nav-notification__single d-flex flex-wrap">
-                                 <div className="nav-notification__type nav-notification__type--danger">
-                                    <img src="img/svg/heart.svg" alt="heart" className="svg"/>
-                                 </div>
-                                 <div className="nav-notification__details">
-                                    <p>
-                                       <a href="" className="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
-                                       <span>sent you a message</span>
-                                    </p>
-                                    <p>
-                                       <span className="time-posted">5 hours ago</span>
-                                    </p>
-                                 </div>
-                              </li>
-                           </ul>
-                           <a href="" className="dropdown-wrapper__more">See all incoming activity</a>
-                        </div>
-                     </div>
-                  </div>
-               </li>
+               {/* <!-- ends: .nav-flag-select --> */}
+
                {/* <!-- ends: .nav-notification --> */}
                <li className="nav-settings">
                   <div className="dropdown-custom">
-                     <a href="javascript:;" className="nav-item-toggle">
+                     <a href="" className="nav-item-toggle">
                         <img src="img/setting.png" alt="setting"/>
                      </a>
                      <div className="dropdown-parent-wrapper">
@@ -270,36 +88,23 @@ const Nav = () => {
                   </div>
                </li>
                {/* <!-- ends: .nav-support --> */}
-               <li className="nav-flag-select">
-                  <div className="dropdown-custom">
-                     <a href="javascript:;" className="nav-item-toggle"><
-                        img src="img/flag.png" alt="" className="rounded-circle"/></a>
-                     <div className="dropdown-parent-wrapper">
-                        <div className="dropdown-wrapper dropdown-wrapper--small">
-                           <a href=""><img src="img/eng.png" alt=""/> English</a>
-                           <a href=""><img src="img/spa.png" alt=""/> Spanish</a>
-                   
-                        </div>
-                     </div>
 
-                  </div>
-               </li>
-               {/* <!-- ends: .nav-flag-select --> */}
+
                <li className="nav-author">
                   <div className="dropdown-custom">
-                     <a href="javascript:;" className="nav-item-toggle">
-                        <img src="img/author-nav.jpg" alt="" className="rounded-circle"/>
+                     <a href="" className="nav-item-toggle">
+                        <img src="img/user-mas02.png" alt="" className="rounded-circle"/>
                         <span className="nav-item__title">Daniel<i className="las la-angle-down nav-item__arrow"></i></span>
                      </a>
                      <div className="dropdown-parent-wrapper">
                         <div className="dropdown-wrapper">
                            <div className="nav-author__info">
                               <div className="author-img">
-                                 <img src="img/author-nav.jpg" alt="" className="rounded-circle"/>
+                                 <img src="img/user-mas02.png" alt="" className="rounded-circle"/>
                               </div>
                               <div>
-                                 <h6>Rabbi Islam Rony</h6>
-                                 <span>UI Designer</span>
+                                 <h6>Daniel Flores</h6>
+                                 <span>Administrador</span>
                               </div>
                            </div>
                            <div className="nav-author__options">
@@ -313,14 +118,7 @@ const Nav = () => {
                                        <i className="uil uil-setting"></i>
                                        Settings</a>
                                  </li>
-                                 <li>
-                                    <a href="">
-                                       <i className="uil uil-key-skeleton"></i> Billing</a>
-                                 </li>
-                                 <li>
-                                    <a href="">
-                                       <i className="uil uil-users-alt"></i> Activity</a>
-                                 </li>
+                                 
                                  <li>
                                     <a href="">
                                        <i className="uil uil-bell"></i> Help</a>

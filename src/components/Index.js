@@ -35,7 +35,7 @@ const Index = () => {
                           <img className="svg" src="img/svg/align-center-alt.svg" alt="img"/></a>
                     </div>
                     <div className="top-menu">
-
+                       <Nav />   
                       
                     </div>
                 </div>
@@ -43,8 +43,8 @@ const Index = () => {
 
                 
                 <div className="navbar-right">
-                     <Header />  
-                 {/* <Nav />   */}
+                     {/* <Header />   */}
+              
                     {/* <!-- navigation nav.js --> */}
                 </div>
                 {/* <!-- ends: .navbar-right --> */}

@@ -24,7 +24,7 @@ NB: this file contains the list of components/scss partial along with the style.
     -- banner
     -- blog
     -- bookmark
-    -- breadcrumb
+    -- breadcrumbnav-item__title
     -- button
     -- calendar
     -- card-charts
@@ -4544,7 +4544,7 @@ body.top-menu .navbar-left .customizer-trigger + .top-menu {
 }
 .navbar-right__menu .nav-author .nav-item__title {
   margin-left: 10px;
-  color: var(--color-gray);
+  color: var(--color-white);
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -4560,7 +4560,7 @@ body.top-menu .navbar-left .customizer-trigger + .top-menu {
   }
 }
 .navbar-right__menu .nav-author .nav-item__title .nav-item__arrow {
-  color: var(--color-light);
+  color: var(--color-white);
   font-size: 12px;
   margin-left: 5px;
 }

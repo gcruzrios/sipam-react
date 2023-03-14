@@ -22,7 +22,7 @@ const Header = () => {
                      </a>
                      <div className="dropdown-parent-wrapper">
                         <div className="dropdown-wrapper">
-                           <h2 className="dropdown-wrapper__title">Messages <span className="badge-circle badge-success ms-1">2</span></h2>
+                           <h2 className="dropdown-wrapper__title">Messages <span className="badge-circle badge-success ms-1">1</span></h2>
                            <ul>
                               <li className="author-online has-new-message">
                                  <div className="user-avater">
@@ -41,72 +41,9 @@ const Header = () => {
                                     </p>
                                  </div>
                               </li>
-                              <li className="author-offline has-new-message">
-                                 <div className="user-avater">
-                                    <img src="img/team-1.png" alt=""/>
-                                 </div>
-                                 <div className="user-message">
-                                    <p>
-                                       <a href="" className="subject stretched-link text-truncate" style="max-width: 180px;">Web Design</a>
-                                       <span className="time-posted">3 hrs ago</span>
-                                    </p>
-                                    <p>
-                                       <span className="desc text-truncate" style="max-width: 215px;">Lorem
-                                          ipsum
-                                          dolor amet cosec Lorem ipsum</span>
-                                       <span className="msg-count badge-circle badge-success badge-sm">1</span>
-                                    </p>
-                                 </div>
-                              </li>
-                              <li className="author-online has-new-message">
-                                 <div className="user-avater">
-                                    <img src="img/team-1.png" alt=""/>
-                                 </div>
-                                 <div className="user-message">
-                                    <p>
-                                       <a href="" className="subject stretched-link text-truncate" style="max-width: 180px;">Web Design</a>
-                                       <span className="time-posted">3 hrs ago</span>
-                                    </p>
-                                    <p>
-                                       <span className="desc text-truncate" style="max-width: 215px;">Lorem
-                                          ipsum
-                                          dolor amet cosec Lorem ipsum</span>
-                                       <span className="msg-count badge-circle badge-success badge-sm">1</span>
-                                    </p>
-                                 </div>
-                              </li>
-                              <li className="author-offline">
-                                 <div className="user-avater">
-                                    <img src="img/team-1.png" alt=""/>
-                                 </div>
-                                 <div className="user-message">
-                                    <p>
-                                       <a href="" className="subject stretched-link text-truncate" style="max-width: 180px;">Web Design</a>
-                                       <span className="time-posted">3 hrs ago</span>
-                                    </p>
-                                    <p>
-                                       <span className="desc text-truncate" style="max-width: 215px;">Lorem
-                                          ipsum
-                                          dolor amet cosec Lorem ipsum</span>
-                                    </p>
-                                 </div>
-                              </li>
-                              <li className="author-offline">
-                                 <div className="user-avater">
-                                    <img src="img/team-1.png" alt=""/>
-                                 </div>
-                                 <div className="user-message">
-                                    <p>
-                                       <a href="" className="subject stretched-link text-truncate" style="max-width: 180px;">Web Design</a>
-                                       <span className="time-posted">3 hrs ago</span>
-                                    </p>
-                                    <p>
-                                       <span className="desc text-truncate" style="max-width: 215px;">Lorem
-                                          ipsum
-                                          dolor amet cosec Lorem ipsum</span>
-                                    </p>
-                                 </div>
-                              </li>
+                              
+                              
+                      
                            </ul>
                            <a href="" className="dropdown-wrapper__more">See All Message</a>
                         </div>
@@ -126,62 +63,6 @@ const Header = () => {
                               <li className="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
                                  <div className="nav-notification__type nav-notification__type--primary">
                                     <img className="svg" src="img/svg/inbox.svg" alt="inbox"/>
-                                 </div>
-                                 <div className="nav-notification__details">
-                                    <p>
-                                       <a href="" className="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
-                                       <span>sent you a message</span>
-                                    </p>
-                                    <p>
-                                       <span className="time-posted">5 hours ago</span>
-                                    </p>
-                                 </div>
-                              </li>
-                              <li className="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
-                                 <div className="nav-notification__type nav-notification__type--secondary">
-                                    <img className="svg" src="img/svg/upload.svg" alt="upload"/>
-                                 </div>
-                                 <div className="nav-notification__details">
-                                    <p>
-                                       <a href="" className="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
-                                       <span>sent you a message</span>
-                                    </p>
-                                    <p>
-                                       <span className="time-posted">5 hours ago</span>
-                                    </p>
-                                 </div>
-                              </li>
-                              <li className="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
-                                 <div className="nav-notification__type nav-notification__type--success">
-                                    <img className="svg" src="img/svg/log-in.svg" alt="log-in"/>
-                                 </div>
-                                 <div className="nav-notification__details">
-                                    <p>
-                                       <a href="" className="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
-                                       <span>sent you a message</span>
-                                    </p>
-                                    <p>
-                                       <span className="time-posted">5 hours ago</span>
-                                    </p>
-                                 </div>
-                              </li>
-                              <li className="nav-notification__single nav-notification__single d-flex flex-wrap">
-                                 <div className="nav-notification__type nav-notification__type--info">
-                                    <img className="svg" src="img/svg/at-sign.svg" alt="at-sign"/>
-                                 </div>
-                                 <div className="nav-notification__details">
-                                    <p>
-                                       <a href="" className="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
-                                       <span>sent you a message</span>
-                                    </p>
-                                    <p>
-                                       <span className="time-posted">5 hours ago</span>
-                                    </p>
-                                 </div>
-                              </li>
-                              <li className="nav-notification__single nav-notification__single d-flex flex-wrap">
-                                 <div className="nav-notification__type nav-notification__type--danger">
-                                    <img src="img/svg/heart.svg" alt="heart" className="svg"/>
                                  </div>
                                  <div className="nav-notification__details">
                                     <p>
@@ -218,36 +99,9 @@ const Header = () => {
                                     <p>Introducing Increment subscriptions </p>
                                  </div>
                               </li>
-                              <li className="d-flex">
-                                 <div className="me-3">
-                                  <img src="img/color-palette.png" alt=""/></div>
-                                 <div className="flex-grow-1">
-                                    <h6>
-                                       <a href="" className="stretched-link">Themes</a>
-                                    </h6>
-                                    <p>Third party themes that are compatible</p>
-                                 </div>
-                              </li>
-                              <li className="d-flex">
-                                 <div className="me-3">
-                                  <img src="img/home.png" alt=""/></div>
-                                 <div className="flex-grow-1">
-                                    <h6>
-                                       <a href="" className="stretched-link">Payments</a>
-                                    </h6>
-                                    <p>We handle billions of dollars</p>
-                                 </div>
-                              </li>
-                              <li className="d-flex">
-                                 <div className="me-3">
-                                  <img src="img/video-camera.png" alt=""/></div>
-                                 <div className="flex-grow-1">
-                                    <h6>
-                                       <a href="" className="stretched-link">Design Mockups</a>
-                                    </h6>
-                                    <p>Share planning visuals with clients</p>
-                                 </div>
-                              </li>
+                             
+                             
+                              
                               <li className="d-flex">
                                  <div className="me-3">
                                   <img src="img/document.png" alt=""/></div>
@@ -314,8 +168,7 @@ const Header = () => {
                                  </li>
                                  <li>
                                     <a href="">
-                                       <i className="uil uil-setting"></i>
-                                       Settings</a>
+                                       <i className="uil uil-setting"></i>Settings</a>
                                  </li>
                                
                                  <li>

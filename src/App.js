@@ -13,6 +13,7 @@ import Actualizar from './components/Actualizar';
 import Index from './components/Index';
 import Login from './components/Login';
 import Nav from './components/Nav';
+import Header from './components/Header';
 import Registro from './components/Registro';
 
 
@@ -51,6 +52,7 @@ function App() {
     <Route path="/registro" exact component={Registro}/>
 
     <MyRoute path="/index" exact component={Index}/>
+    <MyRoute path="/nav" exact component={Nav}/>
     <MyRoute path="/editar/:id" exact component={Actualizar}/>
 
     
