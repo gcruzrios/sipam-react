@@ -48,10 +48,10 @@ export const Login = () => {
         const respuesta= await axios.post(`   WSSIPAM/wsSIPAM/GetUsuario`, headers, usuario);
         //console.log(respuesta);
 
-        const mensaje ="000";
-        const mensaje_alerta= "Bienvenido";
-        //const mensaje = respuesta.data.CodError;
-        //const mensaje_alerta= respuesta.data.CodRespuesta;
+        //const mensaje ="000";
+        //const mensaje_alerta= "Bienvenido";
+        const mensaje = respuesta.data.CodigoResultado;
+        const mensaje_alerta= respuesta.data.MensajeResultado;
 
         console.log(mensaje);
         console.log(mensaje_alerta);
@@ -59,7 +59,7 @@ export const Login = () => {
 
         //"CodError": "OK",
 
-        if(mensaje !=='OK'){
+        if(mensaje !=='200'){
                      
             Swal.fire({
                

@@ -49,49 +49,6 @@
                      </div>
                   </div>
                </li>
-               {/* <!-- ends: nav-message --> */}
-               <li className="nav-notification">
-                  <div className="dropdown-custom">
-                     <a href="" className="nav-item-toggle icon-active">
-                        <img className="svg" src="img/svg/alarm.svg" alt="img"/>
-                     </a>
-                     <div className="dropdown-parent-wrapper">
-                        <div className="dropdown-wrapper">
-                           <h2 className="dropdown-wrapper__title">Notifications <span className="badge-circle badge-warning ms-1">4</span></h2>
-                           <ul>
-                              <li className="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
-                                 <div className="nav-notification__type nav-notification__type--primary">
-                                    <img className="svg" src="img/svg/inbox.svg" alt="inbox"/>
-                                 </div>
-                                 <div className="nav-notification__details">
-                                    <p>
-                                       <a href="" className="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
-                                       <span>sent you a message</span>
-                                    </p>
-                                    <p>
-                                       <span className="time-posted">5 hours ago</span>
-                                    </p>
-                                 </div>
-                              </li>
-                              <li className="nav-notification__single nav-notification__single d-flex flex-wrap">
-                                 <div className="nav-notification__type nav-notification__type--danger">
-                                    <img src="img/svg/heart.svg" alt="heart" className="svg"/>
-                                 </div>
-                                 <div className="nav-notification__details">
-                                    <p>
-                                       <a href="" className="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
-                                       <span>sent you a message</span>
-                                    </p>
-                                    <p>
-                                       <span className="time-posted">5 hours ago</span>
-                                    </p>
-                                 </div>
-                              </li>
-                           </ul>
-                           <a href="" className="dropdown-wrapper__more">See all incoming activity</a>
-                        </div>
-                     </div>
-                  </div>
-               </li>
+               
                
   

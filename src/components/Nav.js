@@ -1,6 +1,26 @@
-import React from 'react'
+//import React from 'react'
+import React, { useEffect, useState } from 'react'
+import {
+    Link
+  } from "react-router-dom";
+
 
 const Nav = () => {
+
+   const [menu, setMenu] = useState(false);
+
+   useEffect(() => {
+       if(localStorage.getItem('token')){
+           setMenu(true);
+       }
+   }, [])
+
+   const logout = ()=>{
+       localStorage.clear();
+       window.location.href='/'
+   }
+
+
   return (
     <div>
 
@@ -124,8 +144,10 @@ const Nav = () => {
                                        <i className="uil uil-bell"></i> Help</a>
                                  </li>
                               </ul>
-                              <a href="index.html" className="nav-author__signout">
-                                 <i className="uil uil-sign-out-alt"></i> Sign Out</a>
+                              <Link  className="nav-author__signout" to="/" onClick={()=>logout()}> 
+                               <i className="uil uil-sign-out-alt"></i> Salir</Link>
+                              {/* <a href="index.html" className="nav-author__signout">
+                                  Sign Out</a> */}
                            </div>
                         </div>
                         {/* <!-- ends: .dropdown-wrapper --> */}
