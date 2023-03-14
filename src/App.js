@@ -22,7 +22,8 @@ import './App.css';
 
 const estaAutenticado =()=>{
   const token = localStorage.getItem('Token');
-  if(token){
+  const estado= localStorage.getItem('Estado');
+  if(token && estado){
    return true;
  }else{
    return false;

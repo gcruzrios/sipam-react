@@ -10,7 +10,7 @@ const Nav = () => {
    const [menu, setMenu] = useState(false);
 
    useEffect(() => {
-       if(localStorage.getItem('token')){
+       if(localStorage.getItem('Token')){
            setMenu(true);
        }
    }, [])

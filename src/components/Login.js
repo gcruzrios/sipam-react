@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 
 export const Login = () => {
 
-    const [username, setUsername] = useState('');
+    const [usuario, setUsuario] = useState('');
     const [password, setPassword] = useState('')
   
 
@@ -23,13 +23,11 @@ export const Login = () => {
         const auth_user = {Username:"c0n4p4n$AppSIPAMUser", Password:"c0n4p4n$AppSIPAMpass"}
         const respuesta= await axios.post(`/wsSIPAM/Authenticate`, auth_user);
 
-        console.log(respuesta);
+       // console.log(respuesta);
 
         const mensaje = respuesta.data.CodError;
         const mensaje_alerta= respuesta.data.CodRespuesta;
 
-        console.log(mensaje);
-        console.log(mensaje_alerta);
         const token = respuesta.data.Token;
                   
         localStorage.setItem('Token', token);
@@ -39,19 +37,36 @@ export const Login = () => {
     const login= async(e) =>{
         e.preventDefault();
         
-        const usuario = {username, password}
-        const Token = localStorage.getItem('token');
+        const ingreso = {usuario, password}
+        
+        // {
+        //     "usuario": "aanchia@conapam.go.cr",
+        //     "password": "123456"
+        // }
+
+        const Token = localStorage.getItem('Token');
 
         const headers= {
-            'Authorization': 'Bearer ' + Token
-        }
-        const respuesta= await axios.post(`   WSSIPAM/wsSIPAM/GetUsuario`, headers, usuario);
-        //console.log(respuesta);
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer '+Token
+            //'Authorization': Token
+        }  
+
+        console.log (headers);
+     
+
+        console.log(ingreso);
+
+        
+
+        //const response= await axios.post(`/wsSIPAM/GetUsuario`,ingreso,headers);
+        const response= await axios.post(`/wsSIPAM/GetUsuario`,ingreso,{headers:{Authorization:'Bearer '+Token}})
+        console.log(response);
 
         //const mensaje ="000";
         //const mensaje_alerta= "Bienvenido";
-        const mensaje = respuesta.data.CodigoResultado;
-        const mensaje_alerta= respuesta.data.MensajeResultado;
+        const mensaje = response.data.CodigoResultado;
+        const mensaje_alerta= response.data.MensajeResultado;
 
         console.log(mensaje);
         console.log(mensaje_alerta);
@@ -73,12 +88,10 @@ export const Login = () => {
             
            
                    
-            //const nombre = respuesta.data.nombre;
-            //const idUsuario = respuesta.data.id;
-            //localStorage.setItem('Token', token);
-            //localStorage.setItem('nombre', nombre);
-            //localStorage.setItem('idUsuario', idUsuario);
-            
+            const estado = 'activo';
+         
+
+            localStorage.setItem('Estado', estado);
             window.location.href='/index'
         }
 
@@ -114,7 +127,7 @@ export const Login = () => {
                                     <div className="edit-profile__body">
                                         <div className="form-group mb-25">
                                             <label for="username">Email</label>
-                                            <input type="text" className="form-control" id="username" placeholder="ufo@conapam.go.cr" required onChange={(e)=>setUsername(e.target.value)}/>
+                                            <input type="text" className="form-control" id="username" placeholder="ufo@conapam.go.cr" required onChange={(e)=>setUsuario(e.target.value)}/>
                                         </div>
                                         <div className="form-group mb-15">
                                             <label for="password-field">contraseña</label>
