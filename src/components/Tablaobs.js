@@ -1,7 +1,73 @@
-import React from "react";
-import TableData from "./TableData";
+import React, { useEffect, useState } from "react";
+//import TableData from "./TableData";
+import axios from "axios";
 
 const Tablaobs = () => {
+  const [obsSeleccionado, setobsSeleccionado] = useState({
+    codigoInstitucion: "",
+    identificacion: "",
+    razonSocial: "",
+    tipoRazonSocial: "",
+    nombreCONAPAM: "",
+    idDistrito: "",
+    region: "",
+    otrasSenias: "",
+    geoLocalizacion: "",
+    cedulaRepresentanteLegal: "",
+    nombreRepresentanteLegal: "",
+    primerApellidoRepresentanteLegal: "",
+    segundoApellidoRepresentanteLegal: "",
+    correoRepresentante: "",
+    telefonoRepresentante: "",
+    cedulaCoordinador: "",
+    nombreCoordinador: "",
+    primerApellidoCoordinador: "",
+    segundoApellidoCoordinador: "",
+    correoCoordinador: "",
+    telefonoCoordinador: "",
+    capacidadAtencionPAM: "",
+    correoOrganizacion: "",
+    estado: "",
+    modalidadAtencion: "",
+
+    // jefe:localStorage.getItem('idUsuario')
+  });
+
+  const Token = localStorage.getItem("Token");
+  console.log(Token);
+  const [data, setData] = useState([]);
+
+  const peticionGet = async () => {
+    //const idUsuario = localStorage.getItem('idUsuario');
+   
+    
+    await axios
+      .get('/wsSIPAM/GetOrganizaciones', {
+        headers:{Authorization:'Bearer '+Token}
+      })
+      .then((response) => {
+        console.log(response.data.Resultado);
+        setData(response.data.Resultado);
+      });
+  }; 
+ 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setobsSeleccionado((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+    console.log(obsSeleccionado);
+  };
+
+  useEffect(() => {
+    peticionGet();
+  }, []);
+
+  // useEffect(async () => {
+  //   await peticionGet();
+  // }, []);
+
   return (
     <div>
       <table className="table mb-0 table-borderless">
@@ -10,47 +76,49 @@ const Tablaobs = () => {
             {/* header */}
             <th>
               <span className="userDatatable-title userDatatable-title">
-                user
+                Codigo
               </span>
             </th>
             <th>
-              <span className="userDatatable-title">emaill</span>
+              <span className="userDatatable-title">Nombre</span>
             </th>
             <th>
-              <span className="userDatatable-title">company</span>
+              <span className="userDatatable-title">Cédula Jurídica</span>
             </th>
             <th>
-              <span className="userDatatable-title">position</span>
+              <span className="userDatatable-title">Region</span>
             </th>
             <th>
-              <span className="userDatatable-title">join date</span>
+              <span className="userDatatable-title">Modalidad</span>
             </th>
             <th>
-              <span className="userDatatable-title">status</span>
+              <span className="userDatatable-title">Estado</span>
             </th>
             <th>
-              <span className="userDatatable-title float-end">action</span>
+              <span className="userDatatable-title float-end">Acciones</span>
             </th>
           </tr>
         </thead>
         <tbody>
-          <tr>
+          {data.map(obs=>(
+          <tr key={obs.id}>
             {/* data */}
             {/* <TableData /> */}
+            
             <td>
-              <div className="userDatatable-content">Kellie Marquot</div>
+              <div className="userDatatable-content">{obs.codigoInstitucion}</div>
             </td>
             <td>
-              <div className="userDatatable-content">john-keller@gmail.com</div>
+              <div className="userDatatable-content">{obs.nombreCONAPAM.substring(40, obs.nombreCONAPAM)}</div>
             </td>
             <td>
-              <div className="userDatatable-content">Business Development</div>
+              <div className="userDatatable-content">{obs.identificacion}</div>
             </td>
             <td>
-              <div className="userDatatable-content">Web Developer</div>
+              <div className="userDatatable-content">{obs.correoOrganizacion}</div>
             </td>
             <td>
-              <div className="userDatatable-content">January 20, 2020</div>
+              <div className="userDatatable-content"></div>
             </td>
             <td>
               <div className="userDatatable-content d-inline-block">
@@ -79,6 +147,7 @@ const Tablaobs = () => {
               </ul>
             </td>
           </tr>
+          ))}
         </tbody>
       </table>
     </div>

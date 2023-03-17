@@ -18,13 +18,7 @@ const TableData = () => {
       <td>
         <div className="userDatatable-content">January 20, 2020</div>
       </td>
-      <td>
-        <div className="userDatatable-content d-inline-block">
-          <span className="bg-opacity-success  color-success rounded-pill userDatatable-content-status active">
-            active
-          </span>
-        </div>
-      </td>
+      
       <td>
         <ul className="orderDatatable_actions mb-0 d-flex flex-wrap">
           <li>

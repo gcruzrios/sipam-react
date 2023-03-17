@@ -4,8 +4,9 @@
 
 
 
-        <div className="d-flex">
-          <div className="userDatatable__imgWrapper d-flex align-items-center">
+     
+
+
             <div className="checkbox-group-wrapper">
               <div className="checkbox-group d-flex">
                 <div className="checkbox-theme-default custom-checkbox checkbox-group__single d-flex">
@@ -18,16 +19,3 @@
                 </div>
               </div>
             </div>
-            <a
-              href="#"
-              className="profile-image rounded-circle d-block m-0 wh-38"
-              style="background-image:url('img/tm6.png'); background-size: cover;"
-            ></a>
-          </div>
-          <div className="userDatatable-inline-title">
-            <a href="#" className="text-dark fw-500">
-              <h6>Kellie Marquot</h6>
-            </a>
-            <p className="d-block mb-0">San Francisco, CA</p>
-          </div>
-        </div>
