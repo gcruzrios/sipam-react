@@ -17,7 +17,7 @@ const Listobs = () => {
               data-bs-toggle="modal"
               data-bs-target="#new-member"
             >
-              <i className="las la-plus fs-16"></i>users list datatable
+              <i className="las la-plus fs-16"></i>Agregar OBS / GL
             </a>
             <Addobs />
           </div>
