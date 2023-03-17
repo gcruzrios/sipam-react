@@ -130,7 +130,7 @@ export const Login = () => {
                                             <input type="text" className="form-control" id="username" placeholder="ufo@conapam.go.cr" required onChange={(e)=>setUsuario(e.target.value)}/>
                                         </div>
                                         <div className="form-group mb-15">
-                                            <label for="password-field">contraseña</label>
+                                            <label for="password-field">contraseña</label>-
                                             <div className="position-relative">
                                                 <input id="password-field" type="password" className="form-control" name="password" placeholder="Password" required onChange={(e)=>setPassword(e.target.value)} />
                                                 <div className="uil uil-eye-slash text-lighten fs-15 field-icon toggle-password2">

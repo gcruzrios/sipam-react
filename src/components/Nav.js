@@ -114,7 +114,7 @@ const Nav = () => {
                   <div className="dropdown-custom">
                      <a href="" className="nav-item-toggle">
                         <img src="img/user-mas02.png" alt="" className="rounded-circle"/>
-                        <span className="nav-item__title">Daniel<i className="las la-angle-down nav-item__arrow"></i></span>
+                        <span className="nav-item__title">CONAPAM<i className="las la-angle-down nav-item__arrow"></i></span>
                      </a>
                      <div className="dropdown-parent-wrapper">
                         <div className="dropdown-wrapper">
@@ -123,7 +123,7 @@ const Nav = () => {
                                  <img src="img/user-mas02.png" alt="" className="rounded-circle"/>
                               </div>
                               <div>
-                                 <h6>Daniel Flores</h6>
+                                 <h6>UFO CONAPAM</h6>
                                  <span>Administrador</span>
                               </div>
                            </div>

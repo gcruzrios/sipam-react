@@ -53,7 +53,7 @@ function App() {
     <Route path="/registro" exact component={Registro}/>
 
     <MyRoute path="/index" exact component={Index}/>
-    <MyRoute path="/nav" exact component={Nav}/>
+    
     <MyRoute path="/editar/:id" exact component={Actualizar}/>
 
     

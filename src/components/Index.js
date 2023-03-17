@@ -16,7 +16,7 @@ const Index = () => {
   return (
     <div>
 
-         <div className="mobile-search">
+          <div className="mobile-search">
               <form action="/" className="search-form">
                 <img src="img/svg/search.svg" alt="search" className="svg" />
                 <input className="form-control me-sm-2 box-shadow-none" type="search" placeholder="Buscar..." aria-label="Search" />
@@ -43,8 +43,7 @@ const Index = () => {
 
                 
                 <div className="navbar-right">
-                     {/* <Header />   */}
-              
+                                
                     {/* <!-- navigation nav.js --> */}
                 </div>
                 {/* <!-- ends: .navbar-right --> */}
