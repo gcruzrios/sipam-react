@@ -15,7 +15,7 @@ import Login from './components/Login';
 import Nav from './components/Nav';
 import Header from './components/Header';
 import Registro from './components/Registro';
-
+import Listpam from './components/Listpam';
 
 import './App.css';
 
@@ -53,7 +53,7 @@ function App() {
     <Route path="/registro" exact component={Registro}/>
 
     <MyRoute path="/index" exact component={Index}/>
-    
+    <MyRoute path="/lista-pam/:id" exact component={Listpam}/>
     <MyRoute path="/editar/:id" exact component={Actualizar}/>
 
     
