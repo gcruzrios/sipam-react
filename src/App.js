@@ -43,6 +43,7 @@ const PublicRoute = (props) =>{
 }
 
 
+console.log(estaAutenticado())
 
 
 function App() {
@@ -53,8 +54,8 @@ function App() {
     <MyRoute path="/registro" exact component={Registro}/>
 
     <MyRoute path="/index" exact component={Index}/>
-    {/*<MyRoute path="/lista-pam/:id" exact component={Listpam}/>
-    <MyRoute path="/agregar-pam/:id" exact component={Addpam}/>
+    <MyRoute path="/lista-pam/:id" exact component={Listpam}/>
+    {/*<MyRoute path="/agregar-pam/:id" exact component={Addpam}/>
     <MyRoute path="/editar/:id" exact component={Actualizar}/> */}
 
     

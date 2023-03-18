@@ -39,7 +39,7 @@ const Tablaobs = () => {
   });
 
   const Token = localStorage.getItem("Token");
-  console.log(Token);
+  //console.log(Token);
   const [data, setData] = useState([]);
 
   const peticionGet = async () => {
@@ -51,7 +51,7 @@ const Tablaobs = () => {
         headers:{Authorization:'Bearer '+Token}
       })
       .then((response) => {
-        console.log(response.data.Resultado);
+        //console.log(response.data.Resultado);
         setData(response.data.Resultado);
       });
   }; 
@@ -106,7 +106,7 @@ const Tablaobs = () => {
         </thead>
         <tbody>
           {data.map(obs=>(
-          <tr key={obs.id}>
+          <tr key={obs.idOrganizacion}>
             {/* data */}
             {/* <TableData /> */}
             
