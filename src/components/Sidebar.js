@@ -15,15 +15,15 @@ const Sidebar = () => {
                      </a>
                      <ul>
                         <li class="active">
-                          <a href="dashboard.html">Demo 1</a>
+                          <a href="dashboard.html">Inicio</a>
                         </li>
-                        <li class="">
+                        {/* <li class="">
                            <a href="demo10.html">
                               Demo 10</a>
-                        </li>
+                        </li> */}
                      </ul>
                   </li>
-                  <li class="has-child">
+                  {/* <li class="has-child">
                      <a href="#" class="">
                         <span class="nav-icon uil uil-window-section"></span>
                         <span class="menu-text">Layouts</span>
@@ -40,25 +40,25 @@ const Sidebar = () => {
                      
                      
                      </ul>
-                  </li>
+                  </li> */}
                   
                   <li class="menu-title mt-30">
-                     <span>Applications</span>
+                     <span>Operaciones</span>
                   </li>
                   <li class="has-child">
                      <a href="#" class="">
                         <span class="nav-icon uil uil-envelope"></span>
-                        <span class="menu-text">Email</span>
+                        <span class="menu-text">Alertas</span>
                         <span class="toggle-icon"></span>
                      </a>
                      <ul>
                         <li class="">
-                           <a href="inbox.html">Inbox</a>
+                           <a href="inbox.html">Buzón Entrada</a>
                         </li>
-                        <li class="">
+                        {/* <li class="">
                            <a href="read-email.html">Read
                               Email</a>
-                        </li>
+                        </li> */}
                      </ul>
                   </li>
                   
@@ -66,44 +66,44 @@ const Sidebar = () => {
                   <li class="has-child">
                      <a href="#" class="">
                         <span class="nav-icon uil uil-folder"></span>
-                        <span class="menu-text">Project</span>
+                        <span class="menu-text">Seguimiento</span>
                         <span class="toggle-icon"></span>
                      </a>
                      <ul>
                         <li class="">
-                           <a href="projects.html">Project</a>
+                           <a href="projects.html">Lista OBS</a>
                         </li>
-                        <li class="">
+                        {/* <li class="">
                            <a href="application-ui.html">Project
                               Details</a>
-                        </li>
-                        <li class="">
+                        </li> */}
+                        {/* <li class="">
                            <a href="create.html">Create
                               Project</a>
-                        </li>
+                        </li> */}
                      </ul>
                   </li>
                   <li>
                      <a href="calendar.html" class="">
                         <span class="nav-icon uil uil-calendar-alt"></span>
-                        <span class="menu-text">Calendar</span>
+                        <span class="menu-text">Calendario</span>
                      </a>
                   </li>
                   <li class="has-child">
                      <a href="#" class="">
                         <span class="nav-icon uil uil-users-alt"></span>
-                        <span class="menu-text">Users</span>
+                        <span class="menu-text">Usuarios</span>
                         <span class="toggle-icon"></span>
                      </a>
                      <ul>
                        
                         <li class="">
-                           <a href="user-info.html">Add User</a>
+                           <a href="user-info.html">Agregar Usuario</a>
                         </li>
-                        <li class="">
+                        {/* <li class="">
                            <a href="users-datatable.html">Users
                               Table</a>
-                        </li>
+                        </li> */}
 
                      </ul>
                   </li>
@@ -114,24 +114,22 @@ const Sidebar = () => {
                         <span class="toggle-icon"></span>
                      </a>
                      <ul>
-                        <li class="">
+                        {/* <li class="">
                            <a href="contact-2.html">Contact
                               Grid</a>
+                        </li> */}
+                        <li class="">
+                           <a href="contact-1.html">Lista Contactos OBS</a>
                         </li>
                         <li class="">
-                           <a href="contact-1.html">Contact
-                              List</a>
-                        </li>
-                        <li class="">
-                           <a href="contact-3.html">Contact
-                              Create</a>
+                           <a href="contact-3.html">Agregar Contacto</a>
                         </li>
                      </ul>
                   </li>
                   
                   
                   
-                  <li class="has-child">
+                  {/* <li class="has-child">
                      <a href="#" class="">
                         <span class="nav-icon uil uil-exchange"></span>
                         <span class="menu-text">Import & Export</span>
@@ -152,32 +150,31 @@ const Sidebar = () => {
                         </li>
                      </ul>
                   </li>
-                  
+                   */}
                   
                   
                   <li class="has-child">
                      <a href="#" class="">
                         <span class="nav-icon uil uil-user"></span>
-                        <span class="menu-text">Support</span>
+                        <span class="menu-text">Soporte</span>
                         <span class="toggle-icon"></span>
                      </a>
                      <ul>
                         <li class="">
-                           <a href="support-ticket.html">Support
-                              Ticket</a>
+                           <a href="support-ticket.html">Solicitudes
+                              </a>
                         </li>
-                        <li class="">
+                        {/* <li class="">
                            <a href="support-details.html">Ticket
                               Details</a>
-                        </li>
+                        </li> */}
                         <li class="">
-                           <a href="new-ticket.html">New
-                              Ticket</a>
+                           <a href="new-ticket.html">Agregar Solicitud</a>
                         </li>
                      </ul>
                   </li>
                
-                  <li class="has-child">
+                  {/* <li class="has-child">
                      <a href="#" class="">
                         <span class="nav-icon uil uil-table"></span>
                         <span class="menu-text">Table</span>
@@ -198,29 +195,31 @@ const Sidebar = () => {
                            </a>
                         </li>
                      </ul>
-                  </li>
+                  </li> */}
+
+                  
                   <li class="menu-title mt-30">
-                     <span>CRUD</span>
+                     <span>Ayuda</span>
                   </li>
                   <li class="has-child">
                      <a href="#" class="">
                         <span class="nav-icon uil uil-database"></span>
-                        <span class="menu-text">Firestore Crud</span>
+                        <span class="menu-text">Lista de Temas</span>
                         <span class="toggle-icon"></span>
 
                      </a>
                      <ul>
                         <li class="">
-                           <a href="firestore.html">View All</a>
+                           <a href="firestore.html">Ver todo</a>
                         </li>
-                        <li class="">
+                        {/* <li class="">
                            <a href="firestore-add.html">Add
                               New</a>
-                        </li>
+                        </li> */}
                      </ul>
                   </li>
                   
-                  <li class="menu-title mt-30">
+                  {/* <li class="menu-title mt-30">
                      <span>Pages</span>
                   </li>
                   <li class="has-child">
@@ -261,7 +260,7 @@ const Sidebar = () => {
                            <span class="menu-text">Sign Up</span>
                         </a>
                      </li>
-                  </li>
+                  </li> */}
                </ul>
             </div>
          </div>

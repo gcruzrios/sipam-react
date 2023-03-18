@@ -1,6 +1,6 @@
 import React from "react";
 
-const Addobs = () => {
+const Editobs = () => {
   return (
     <div>
       {/* <!-- Modal --> */}
@@ -172,5 +172,5 @@ const Addobs = () => {
   );
 };
 
-export default Addobs;
+export default Editobs;
 
