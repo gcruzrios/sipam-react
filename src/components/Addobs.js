@@ -16,7 +16,7 @@ const Addobs = () => {
           <div class="modal-content  radius-xl">
             <div class="modal-header">
               <h6 class="modal-title fw-500" id="staticBackdropLabel">
-                Nueva OBS / GL
+                Información OBS / GL
               </h6>
               <button
                 type="button"
@@ -30,34 +30,32 @@ const Addobs = () => {
             <div class="modal-body">
               <div class="new-member-modal">
                 <form>
+                   <div class="form-group mb-20">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Código Interno OBS"
+                    />
+                  </div>
                   <div class="form-group mb-20">
                     <input
                       type="text"
                       class="form-control"
-                      placeholder="Duran Clayton"
+                      placeholder="Cédula Jurídica OBS"
                     />
                   </div>
                   <div class="form-group mb-20">
-                    <div class="category-member">
-                      <select
-                        class="js-example-basic-single js-states form-control"
-                        id="category-member"
-                      >
-                        <option value="JAN">1</option>
-                        <option value="FBR">2</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="form-group mb-20">
-                    <textarea
+                    <input
+                      type="text"
                       class="form-control"
-                      id="exampleFormControlTextarea1"
-                      rows="3"
-                      placeholder="Project description"
-                    ></textarea>
+                      placeholder="Nombre OBS"
+                    />
                   </div>
+
+
+                  
                   <div class="form-group textarea-group">
-                    <label class="mb-15">status</label>
+                    <label class="mb-15">Estado</label>
                     <div class="d-flex">
                       <div class="project-task-list__left d-flex align-items-center">
                         <div class="checkbox-group d-flex me-50 pe-10">
@@ -72,7 +70,7 @@ const Addobs = () => {
                               for="check-grp-1"
                               class="fs-14 color-light strikethrough"
                             >
-                              status
+                              Estado
                             </label>
                           </div>
                         </div>
@@ -87,7 +85,7 @@ const Addobs = () => {
                               for="check-grp-2"
                               class="fs-14 color-light strikethrough"
                             >
-                              Deactivated
+                              Inactiva
                             </label>
                           </div>
                         </div>
@@ -102,7 +100,7 @@ const Addobs = () => {
                               for="check-grp-3"
                               class="fs-14 color-light strikethrough"
                             >
-                              bloked
+                              Bloqueada
                             </label>
                           </div>
                         </div>
@@ -112,7 +110,7 @@ const Addobs = () => {
                  
                   <div class="d-flex new-member-calendar">
                     <div class="form-group w-100 me-sm-15 form-group-calender">
-                      <label for="datepicker">start Date</label>
+                      <label for="datepicker">Fecha Registro</label>
                       <div class="position-relative">
                         <input
                           type="text"
@@ -130,7 +128,7 @@ const Addobs = () => {
                       </div>
                     </div>
                     <div class="form-group w-100 form-group-calender">
-                      <label for="datepicker2">End Date</label>
+                      <label for="datepicker2">Fecha Renovación</label>
                       <div class="position-relative">
                         <input
                           type="text"

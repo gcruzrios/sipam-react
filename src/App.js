@@ -9,13 +9,13 @@ import {
  
 } from "react-router-dom";
 
-import Actualizar from './components/Actualizar';
-import Index from './components/Index';
-import Login from './components/Login';
-import Nav from './components/Nav';
-import Header from './components/Header';
-import Registro from './components/Registro';
-import Listpam from './components/Listpam';
+import Actualizar from './pages/Actualizar';
+import Index from './pages/Index';
+import Login from './pages/Login';
+
+import Registro from './pages/Registro';
+import Listpam from './pages/Listpam';
+
 
 import './App.css';
 
@@ -50,11 +50,12 @@ function App() {
     <Router>
    
     <PublicRoute path="/" exact component={Login}/>
-    <Route path="/registro" exact component={Registro}/>
+    <MyRoute path="/registro" exact component={Registro}/>
 
     <MyRoute path="/index" exact component={Index}/>
-    <MyRoute path="/lista-pam/:id" exact component={Listpam}/>
-    <MyRoute path="/editar/:id" exact component={Actualizar}/>
+    {/*<MyRoute path="/lista-pam/:id" exact component={Listpam}/>
+    <MyRoute path="/agregar-pam/:id" exact component={Addpam}/>
+    <MyRoute path="/editar/:id" exact component={Actualizar}/> */}
 
     
   </Router>

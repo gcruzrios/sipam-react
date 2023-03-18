@@ -3,14 +3,15 @@ import React,  { useState } from 'react'
 import {
   BrowserRouter as Router,
   Route,
-  Redirect
+  Redirect,Link
  
 } from "react-router-dom";
-import Nav from './Nav.js';
-import Header from './Header.js';
-import Footer from './Footer.js';
-import Home from './Home.js';
-import Sidebar from './Sidebar';
+
+import Nav from '../components/Nav.js';
+import Header from '../components/Header.js';
+import Footer from '../components/Footer.js';
+import Home from '../components/Home.js';
+import Sidebar from '../components/Sidebar';
 
 const Index = () => {
   return (
@@ -60,7 +61,7 @@ const Index = () => {
               <div className="contents">
 
               {/* <!-- Home.js --> */}
-                <Home /> 
+
               </div>
                 <Footer />  
               {/* <!-- Footer.js --> */}

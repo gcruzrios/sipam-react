@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
-//import TableData from "./TableData";
+
+import {
+  Link
+} from "react-router-dom";
+
+
 import axios from "axios";
 
 const Tablaobs = () => {
@@ -89,7 +94,7 @@ const Tablaobs = () => {
               <span className="userDatatable-title">Region</span>
             </th>
             <th>
-              <span className="userDatatable-title">Modalidad</span>
+              <span className="userDatatable-title">correo Organizacion</span>
             </th>
             <th>
               <span className="userDatatable-title">Estado</span>
@@ -106,7 +111,11 @@ const Tablaobs = () => {
             {/* <TableData /> */}
             
             <td>
-              <div className="userDatatable-content">{obs.codigoInstitucion}</div>
+              
+              
+              <div className="userDatatable-content">
+              <Link  className="nav-author__signout" to={`/lista-pam/${obs.codigoInstitucion}`}>  <i className="uil uil-home-alt"></i> {obs.codigoInstitucion}</Link>
+              </div>
             </td>
             <td>
               <div className="userDatatable-content">{obs.nombreCONAPAM.substring(40, obs.nombreCONAPAM)}</div>
@@ -115,15 +124,15 @@ const Tablaobs = () => {
               <div className="userDatatable-content">{obs.identificacion}</div>
             </td>
             <td>
-              <div className="userDatatable-content">{obs.correoOrganizacion}</div>
+              <div className="userDatatable-content">{obs.region}</div>
             </td>
             <td>
-              <div className="userDatatable-content"></div>
+              <div className="userDatatable-content">{obs.correoOrganizacion}</div>
             </td>
             <td>
               <div className="userDatatable-content d-inline-block">
                 <span className="bg-opacity-success  color-success rounded-pill userDatatable-content-status active">
-                  active
+                  activo
                 </span>
               </div>
             </td>
